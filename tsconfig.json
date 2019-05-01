@@ -1,0 +1,32 @@
+// https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+// https://www.typescriptlang.org/docs/handbook/compiler-options.html
+{
+  "compilerOptions": {
+    "target": "es5",
+    "strict": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "typeRoots": [
+      "node_modules/@types",
+      "@types"
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "src/client/*"
+      ]
+    },
+    // vue-class-component
+    // ECMAScript stage 1 decorators (https://github.com/wycats/javascript-decorators/blob/master/README.md)
+    "experimentalDecorators": true,
+    // TypeScript 2.7
+    // TS2564: Property '{property}' has no initializer and is not definitely assigned in the constructor.
+    "strictPropertyInitialization": false,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
