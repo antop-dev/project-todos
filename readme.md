@@ -30,7 +30,7 @@ npm run dev:client
 
 Web
 ```
-http://localhost:3000/
+http://localhost:9000/
 ```
 
 Test
